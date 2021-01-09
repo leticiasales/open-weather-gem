@@ -15,6 +15,4 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir['lib/**/*'] # Dir['lib/**/{*,.*}']
   spec.require_paths = ["lib"]
-
-  spec.add_runtime_dependency 'httparty', '~> 0.13.7'
 end

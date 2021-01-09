@@ -9,8 +9,8 @@ module OpenWeather
       @api_key = api_key
     end
 
-    def get(city)
-      return HTTParty.get(URI.parse("api.openweathermap.org/data/2.5/weather?q={#{city}}&appid={#{@api_key}}"))
+    def get(city_id)
+      return Net::HTTP.get(URI.parse("api.openweathermap.org/data/2.5/weather?id=#{city_id}&appid=#{@api_key}"))
     end
   end
 end
