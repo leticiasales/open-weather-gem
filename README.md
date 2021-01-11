@@ -21,7 +21,7 @@ And then execute:
 
 ```ruby
 request = OpenWeather::Request.new(OpenWeatherApiKey)
-request.get(CityCode)
+request.get/get_forecast(CityCode)
 ```
 
 ## Contributing
