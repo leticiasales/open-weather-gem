@@ -23,6 +23,7 @@ module OpenWeather
         }
 
       result[:temp] = response["main"]["temp"]
+      result[:city] = response["name"]
 
       result
     end
